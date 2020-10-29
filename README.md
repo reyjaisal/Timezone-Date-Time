@@ -1,0 +1,2 @@
+# Timezone-Date-Time
+There are too many errors to get the date / time according to the user's region / time zone. I have also solved the problem for a localhost server, I may have coded hard to solve the problem, but it will help you get the date and time of your timezone / zone.  You can download the code, change it and do whatever you want with this code.  If you can make this code easier to use then please do not forget to make commit the changes.  THANK YOU  Social: @reyjaisal
