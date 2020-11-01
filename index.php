@@ -24,7 +24,6 @@ if(isset($_GET['timezone']))
         $date = new DateTime("now", new DateTimeZone($tmzn) );
         $theTime = $date->format('Y-m-d H:i:s');
     }
-    
 }
 else{
     $tmzn = "";
@@ -71,11 +70,10 @@ else{
     
     <h1>Date/Time of your <?php echo $tmzn; ?>: <span style="color: red;"><?php echo $theTime ?></span></h1>
     <h4 style=" background-color:#333; color:#fff;">Note: <em>In Localhost you can't get your region time zone</em></h3>
-    
-    
     <h2 style="">If you want to run it on LocalHost then choose your method</h2> 
-
-    <h4 style="margin-bottom:8px">1. Choose Timezone from List:</h3> 
+    <h3 style="color:#eed5d5"><span style="color: red">NOTE:</span> The Input tags have same name and id so make your you do not use the tags with same name and id because the name and is unique in whole project.</h3> 
+	
+    <h4 style="margin-bottom:8px">1. Choose Timezone from List:</h4> 
     <!-- Choosing Timezone from Datalist -->
     <form action="">
         <input type="search" list="timezonelist1" name="timezone" id="timezone" placeholder="Find Your Timezone" class="form-control" required> <button type="submit">Submit</button>
@@ -86,7 +84,7 @@ else{
         </datalist> 
     </form>
 
-    <h4 style="margin-bottom:8px">2. By Entering City Name:</h3> 
+    <h4 style="margin-bottom:8px">2. By Entering City Name:</h4> 
     <!-- Find time zone by city name! -->
 	<form action="">
     <input type="search" list="timezonelist2" name="timezone" id="timezone" placeholder="Enter City Name" class="form-control" required> <button type="submit">Submit</button>
